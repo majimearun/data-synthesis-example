@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "data-synthesis-example"
+version = "0.1.0"
+description = ""
+authors = ["majimearun <arunachala0619@gmail.com>"]
+readme = "README.md"
+packages = [{include = "data_synthesis_example"}]
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+sdv = "^1.1.0"
+ipython = "^8.13.2"
+jupyter = "^1.0.0"
+pandas = "^2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
