@@ -122,7 +122,7 @@ def fill_tests(n):
     for i in range(n):
         tests.loc[i] = [
             i,
-            "".join([fake.name()[:3], fake.name()[-3:]]),
+            "".join([fake.name()[:3], fake.name()[-3:]]).lower().capitalize(),
             fake.random_int(min=0, max=diseases.shape[0] - 1),
         ]
     print(f"completed filling {n} tests")
