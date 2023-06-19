@@ -98,9 +98,19 @@ def fill_medicines(n):
     for i in range(n):
         medicines.loc[i] = [
             i,
-            "".join([fake.name()[:3], fake.name()[-3:]]),
+            "".join([fake.name()[:2], fake.name()[-2:]]).lower().capitalize(),
             fake.random_element(
-                elements=("tablet", "syrup", "injection", "capsule", "ointment")
+                elements=(
+                    "tablet",
+                    "syrup",
+                    "injection",
+                    "capsule",
+                    "ointment",
+                    "gel",
+                    "cream",
+                    "powder",
+                    "drops",
+                )
             ),
             fake.random_int(min=100, max=10000),
             fake.random_int(min=0, max=diseases.shape[0] - 1),
