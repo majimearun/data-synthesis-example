@@ -56,6 +56,11 @@ prescriptions = pd.DataFrame(
 
 fake = Faker(locale="en_US")
 
+countries = []
+for i in range(10):
+    countries.append(fake.country())
+countries = list(set(countries))
+
 
 def fill_hospitals(n):
     for i in range(n):
