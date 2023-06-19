@@ -259,6 +259,21 @@ def fill_prescriptions(n):
             medicine_id = None
         if medicine_id is not None:
             dosage = fake.random_int(min=1, max=10)
+            medicine_type = medicines.loc[medicine_id]["medicine_type"]
+
+            if medicine_type in [
+                "tablet",
+                "capsule",
+                "ointment",
+                "gel",
+                "cream",
+                "powder",
+            ]:
+                dosage = str(dosage) + " " + "mg/day"
+            elif medicine_type in ["syrup", "drops", "injection"]:
+                dosage = str(dosage) + " " + "ml/day"
+            else:
+                dosage = str(dosage) + " " + "units/day"
         else:
             dosage = None
         observation_id = i
