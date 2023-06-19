@@ -89,7 +89,7 @@ def fill_diseases(n):
     for i in range(n):
         diseases.loc[i] = [
             i,
-            "".join([fake.name()[:3], fake.name()[-3:]]),
+            "".join([fake.name()[:2], fake.name()[-2:]]).lower().capitalize(),
         ]
     print(f"completed filling {n} diseases")
 
