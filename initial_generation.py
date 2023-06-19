@@ -85,24 +85,6 @@ def fill_patients(n):
     print(f"completed filling {n} patients")
 
 
-def fill_hospitals(n):
-    for i in range(n):
-        hospitals.loc[i] = [i, fake.company(), fake.address(), fake.country()]
-    print(f"completed filling {n} hospitals")
-
-
-def fill_patients(n):
-    for i in range(n):
-        patients.loc[i] = [
-            i,
-            fake.name(),
-            fake.random_element(elements=("M", "F")),
-            fake.date_of_birth(minimum_age=0, maximum_age=100),
-            fake.country(),
-        ]
-    print(f"completed filling {n} patients")
-
-
 def fill_diseases(n):
     for i in range(n):
         diseases.loc[i] = [
