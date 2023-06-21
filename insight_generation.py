@@ -12,16 +12,14 @@ observations = pd.read_csv("./data/observations.csv")
 prescriptions = pd.read_csv("./data/prescriptions.csv")
 tests = pd.read_csv("./data/tests.csv")
 
-tables = [
-    hospitals,
-    patients,
-    visits,
-    doctors,
-    diseases,
-    medicines,
-    observations,
-    prescriptions,
-    tests,
-]
 
-# def find_relevant_tables(tables: list[pd.DataFrame], )
+main_df = pd.merge(visits, patients, on="patient_id", how="outer")
+main_df = pd.merge(main_df, hospitals, on="hospital_id", how="outer")
+main_df = pd.merge(main_df, observations, on="visit_id", how="outer")
+main_df = pd.merge(main_df, diseases, on="disease_id", how="outer")
+main_df = pd.merge(main_df, doctors, on="doctor_id", how="outer")
+main_df = pd.merge(main_df, tests, on="test_id", how="outer")
+main_df = pd.merge(main_df, prescriptions, on="observation_id", how="outer")
+main_df = pd.merge(main_df, medicines, on="medicine_id", how="outer")
+
+print(len(main_df))
