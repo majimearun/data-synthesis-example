@@ -11,3 +11,17 @@ medicines = pd.read_csv("./data/medicines.csv")
 observations = pd.read_csv("./data/observations.csv")
 prescriptions = pd.read_csv("./data/prescriptions.csv")
 tests = pd.read_csv("./data/tests.csv")
+
+tables = [
+    hospitals,
+    patients,
+    visits,
+    doctors,
+    diseases,
+    medicines,
+    observations,
+    prescriptions,
+    tests,
+]
+
+# def find_relevant_tables(tables: list[pd.DataFrame], )
