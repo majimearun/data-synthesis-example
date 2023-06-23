@@ -22,4 +22,10 @@ main_df = pd.merge(main_df, tests, on="test_id", how="outer")
 main_df = pd.merge(main_df, prescriptions, on="observation_id", how="outer")
 main_df = pd.merge(main_df, medicines, on="medicine_id", how="outer")
 
-print(len(main_df))
+from pandasai import PandasAI
+from pandasai.llm.starcoder import Starcoder
+import os
+
+
+llm = Starcoder(api_token="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")
+pandas_ai = PandasAI(llm)

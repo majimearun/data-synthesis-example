@@ -7,12 +7,9 @@ readme = "README.md"
 packages = [{include = "data_synthesis_example"}]
 
 [tool.poetry.dependencies]
-python = "3.10.*"
-sdv = "^1.1.0"
-ipython = "^8.13.2"
-jupyter = "^1.0.0"
-pandas = "^2.0.2"
-langchain = "^0.0.207"
+python = "^3.10"
+pandasai = "^0.6.2"
+faker = "^18.11.1"
 
 
 [build-system]
