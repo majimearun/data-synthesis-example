@@ -22,15 +22,10 @@ main_df = pd.merge(main_df, tests, on="test_id", how="outer")
 main_df = pd.merge(main_df, prescriptions, on="observation_id", how="outer")
 main_df = pd.merge(main_df, medicines, on="medicine_id", how="outer")
 
-main_df.to_csv("./data/main.csv", index=False)
-
-palm_api_key = "AIzaSyCes53YLYZZ38hHeWVYG9IoLx_svGFAvg4"
-
-
 from pandasai import PandasAI
-from pandasai.llm.google_palm import GooglePalm
+from pandasai.llm.starcoder import Starcoder
+import os
 
-llm = GooglePalm(palm_api_key)
-pai = PandasAI(llm, conversational=True)
 
-print(pai(main_df, prompt="which country has the most patients?"))
+llm = Starcoder(api_token="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")
+pandas_ai = PandasAI(llm)
