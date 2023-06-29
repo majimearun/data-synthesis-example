@@ -10,6 +10,7 @@ packages = [{include = "data_synthesis_example"}]
 python = "^3.10"
 pandasai = "^0.6.2"
 faker = "^18.11.1"
+google-generativeai = "^0.1.0"
 
 
 [build-system]
