@@ -1,1 +1,7 @@
 'which country has the most patients?', (0, 92)
+'give me 30 insights about column patient_name, and its logically related columns', (512, 2319)
+'give me 30 insights about column hospital_name, and its logically related columns', (3072, 2924)
+'give me 10 insights about column patient_name, and its logically related columns', (6144, 1114)
+'give me 10 insights about column hospital_name, and its logically related columns', (7680, 1430)
+'give me 10 insights about column patient_name, and its logically related columns where each insight is unique', (9216, 2140)
+'give me 10 insights about column hospital_name, and its logically related columns where each insight is unique', (11776, 1403)

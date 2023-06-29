@@ -33,4 +33,12 @@ from pandasai.llm.google_palm import GooglePalm
 llm = GooglePalm(palm_api_key)
 pai = PandasAI(llm, conversational=True)
 
-print(pai(main_df, prompt="which country has the most patients?"))
+column_names = ["patient_name", "hospital_name"]
+
+for column in column_names:
+    print(
+        pai(
+            main_df,
+            prompt=f"give me 10 insights about column {column}, and its logically related columns where each insight is unique",
+        )
+    )
