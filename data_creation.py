@@ -289,7 +289,7 @@ def fill_prescriptions(n):
     print(f"completed filling {n} prescriptions")
 
 
-fill_hospitals(50)
+fill_hospitals(2000)
 fill_patients(1000)
 fill_diseases(20)
 fill_medicines(100)
