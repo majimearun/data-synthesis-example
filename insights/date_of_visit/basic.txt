@@ -1,0 +1,32 @@
+========================================
+Insights for column: date_of_visit
+========================================
+========================================
+Tests on single column:
+========================================
+1. Date-specific insights:
+   - Earliest date: 1972-12-21
+   - Latest date: 2023-07-17
+   - Number of unique dates: 7594
+2. Date-based aggregations:
+   - Number of records per day:
+2023-07-16    154
+2023-07-15    148
+2023-07-17    115
+2023-07-14     98
+2023-07-13     77
+Name: date_of_visit, dtype: int64
+   - Number of records per month:
+2023-07    1299
+2023-06    1129
+2023-05     737
+2023-04     651
+2023-03     575
+Freq: M, Name: date_of_visit, dtype: int64
+   - Number of records per year:
+2023    5286
+2022    3466
+2021    2273
+2020    1737
+2019    1423
+Freq: A-DEC, Name: date_of_visit, dtype: int64

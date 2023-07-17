@@ -1,0 +1,19 @@
+========================================
+Insights for column: disease_name
+========================================
+========================================
+Tests on single column:
+========================================
+1. Unique values count: 194
+2. Most repeated values:
+   - Value 'Jeon' appears 501 times.
+   - Value 'Kira' appears 266 times.
+   - Value 'Sans' appears 229 times.
+   - Value 'Lier' appears 203 times.
+   - Value 'Sace' appears 200 times.
+3. Least repeated values:
+   - Value 'Kion' appears 1 times.
+   - Value 'Alon' appears 1 times.
+   - Value 'Auon' appears 1 times.
+   - Value 'Raez' appears 1 times.
+   - Value 'Betz' appears 1 times.

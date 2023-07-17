@@ -289,15 +289,15 @@ def fill_prescriptions(n):
     print(f"completed filling {n} prescriptions")
 
 
-fill_hospitals(2000)
-fill_patients(1000)
-fill_diseases(20)
-fill_medicines(100)
-fill_tests(200)
-fill_doctors(500)
-fill_visits(2000)
-fill_observations(5000)
-fill_prescriptions(5000)
+fill_hospitals(500)
+fill_patients(10000)
+fill_diseases(200)
+fill_medicines(250)
+fill_tests(300)
+fill_doctors(5000)
+fill_visits(20000)
+fill_observations(20000)
+fill_prescriptions(20000)
 
 # convert to csv
 

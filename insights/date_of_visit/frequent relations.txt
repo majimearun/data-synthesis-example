@@ -1,0 +1,4 @@
+========================================
+Tests on multiple columns:
+========================================
+1. No insights available for this column type.
